@@ -31,9 +31,12 @@ public class Product {
     @Column(name = "status")
     private ProductStatus status;
 
-
     public static enum ProductStatus {
         ENABLED, DISABLED
     }
+
+    @ManyToOne
+    @JoinColumn(name = "category_id")
+    private Category category;
 
 }

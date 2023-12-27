@@ -57,6 +57,7 @@ public class ProductController {
         return ResponseEntity.ok(product);
 
     }
+
     @PutMapping("/{productId}/disabled")
     public ResponseEntity<Product> disableById(@PathVariable Long productId) {
 

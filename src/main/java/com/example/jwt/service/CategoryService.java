@@ -1,9 +1,7 @@
 package com.example.jwt.service;
 
 import com.example.jwt.dto.SaveCategory;
-import com.example.jwt.dto.SaveProduct;
 import com.example.jwt.persistence.entity.Category;
-import com.example.jwt.persistence.entity.Product;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
 

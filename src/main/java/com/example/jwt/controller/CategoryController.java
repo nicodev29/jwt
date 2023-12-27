@@ -15,7 +15,7 @@ import org.springframework.web.bind.annotation.*;
 import java.util.Optional;
 
 @RestController
-@RequestMapping("/category")
+@RequestMapping("/categories")
 public class CategoryController {
     private CategoryService categoryService;
 
@@ -53,12 +53,13 @@ public class CategoryController {
 
     @PutMapping("/{categoryId}")
     public ResponseEntity<Category> updateCategory(@PathVariable Long categoryId,
-                                                 @RequestBody @Validated SaveCategory saveCategory) {
+                                                   @RequestBody @Validated SaveCategory saveCategory) {
 
         Category category = categoryService.updateCategory(categoryId, saveCategory);
         return ResponseEntity.ok(category);
 
     }
+
     @PutMapping("/{categoryId}/disabled")
     public ResponseEntity<Category> desabledCategoryById(@PathVariable Long categoryId) {
 

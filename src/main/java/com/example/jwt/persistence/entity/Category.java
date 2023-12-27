@@ -18,6 +18,16 @@ public class Category {
     @Column(name = "id")
     private Long id;
 
+    @Column(name = "name")
+    private String name;
+
+    @Column(name = "status")
+    @Enumerated(EnumType.STRING)
+    private CategoryStatus status;
+
+    private static enum CategoryStatus {
+        DISABLED, ENABLED;
+    }
 
 }
 
