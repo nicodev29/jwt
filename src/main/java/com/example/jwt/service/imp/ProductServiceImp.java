@@ -1,7 +1,6 @@
 package com.example.jwt.service.imp;
 
 import com.example.jwt.dto.SaveProduct;
-import com.example.jwt.exception.ObjetNotFoundException;
 import com.example.jwt.persistence.entity.Category;
 import com.example.jwt.persistence.entity.Product;
 import com.example.jwt.persistence.repository.ProductRepository;
